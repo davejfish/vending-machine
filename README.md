@@ -10,7 +10,8 @@ typical `dev`.
 
 Challenges:
 1. [Vending Machine](./vending-machine/README.md)
-2. [Bowling Ball](./bowling-ball/README.md)
+2. [Fizz Buzz](./fizz-buzz/README.md)
+3. [Bowling Ball](./bowling-ball/README.md)
 
 ## Notes on Technical interviewing
 
