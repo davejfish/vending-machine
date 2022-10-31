@@ -13,12 +13,12 @@ with a TA to go over your code.
 
 ## Rubric
 
-| Rubric                                                                          | Points |
-|---------------------------------------------------------------------------------|--------|
-| The program accepts inputs of `--item` and `--money`                            | 5      |
-| The program prints the coins returned (see formatting section) and success/fail | 5      |
-| Select and implement one of the personal flair items                            | 5      |
-| Select and implement another of the personal flair items (extra credit)         | 10     |
+| Rubric                                                                           | Points |
+|----------------------------------------------------------------------------------|--------|
+| The program accepts inputs of `--item` and `--money`.                            | 5      |
+| The program prints the coins returned (see formatting section) and success/fail. | 5      |
+| Select and implement one of the personal flair items.                            | 5      |
+| Select and implement another of the personal flair items (extra credit).         | 10     |
 
 
 ## Formatting
