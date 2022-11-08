@@ -15,7 +15,7 @@ with a TA to go over your code.
 
 | Rubric                                                                           | Points |
 |----------------------------------------------------------------------------------|--------|
-| The program accepts inputs of `--item` and `--money`.                            | 5      |
+| The program accepts inputs of `--item-cost` and `--payment`.                     | 5      |
 | The program prints the coins returned (see formatting section) and success/fail. | 5      |
 | Select and implement one of the personal flair items.                            | 5      |
 | Select and implement another of the personal flair items (extra credit).         | 10     |
@@ -75,8 +75,8 @@ it does.
 
 Additionally, your program prints [usage
 information](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html)
-when given the `--help` argument, or if the `--item` and `--money` arguments are
-not supplied.
+when given the `--help` argument, or if the `--item-cost` and `--payment`
+arguments are not supplied.
 
 Be sure to note this in your submission.
 
