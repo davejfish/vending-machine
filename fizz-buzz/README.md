@@ -21,9 +21,9 @@ you why you wrote the code the way you did. Be prepared to offer explanations.
 
 ## Rubric
 
-| Rubric                                      | Points |
-|---------------------------------------------|--------|
-| Implement fizz and buzz                     | 5      |
-| Implement fizzbuzz                          | 5      |
-| Defend a question about your code           | 5      |
-| Answer what you would've if given more time | 5      |
+| Rubric                                       | Points |
+|----------------------------------------------|--------|
+| Implement fizz and buzz.                     | 5      |
+| Implement fizzbuzz.                          | 5      |
+| Defend a question about your code.           | 5      |
+| Answer what you would've if given more time. | 5      |
