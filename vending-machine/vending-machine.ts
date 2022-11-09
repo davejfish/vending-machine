@@ -3,7 +3,7 @@ import process from 'node:process'
 let arg = null;
 let cost = null;
 let payment = null;
-let tender = 'usd';
+let tender = null;
 
 while((arg = process.argv.shift()) != null) {
   if(arg == '--item-cost') {
@@ -39,14 +39,10 @@ if (tender == null) {
 // Implement your vending machine here!
 import coins from './currencies.js';
 
-let currency = coins.usd;
-switch(tender) {
-  case 'usd': 
-    currency = coins.usd
-    break;
-  case 'yen':
-    currency = coins.yen;
-    break;
+const currency = coins[tender]
+if (currency == null) {
+  console.log('unknown currency');
+  process.exit(4)
 }
 
 let changeToBeReturned = payment - cost;
@@ -54,16 +50,15 @@ let changeObject: Record<string, number> = {};
 
 if (changeToBeReturned < 0) {
   console.log('status: failure \nmessage: Not enough money')
-  process.exit(4);
+  process.exit(5);
 }
 
-
-  for (let [coin, value] of Object.entries(currency)) {
-    while (changeToBeReturned >= value) {
-      changeObject[coin] = Math.floor(changeToBeReturned / value);
-      changeToBeReturned = changeToBeReturned % value;
-    }
+for (let [coin, value] of Object.entries(currency)) {
+  while (changeToBeReturned >= value) {
+    changeObject[coin] = Math.floor(changeToBeReturned / value);
+    changeToBeReturned = changeToBeReturned % value;
   }
+}
 
 
 console.log('status: success\nyour change is: ', changeObject);

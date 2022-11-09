@@ -17,14 +17,7 @@ interface Coins {
   五円玉: 5,
   一円玉: 1
 }
-const coins = {usd, yen}
+
+const coins: {[k: string]: Coins} = {usd, yen}
 
 export default coins;
-
-
-// const coins: { [usd: string]: { 
-//   quarters: number,
-//   dimes: number,
-//   nickels: number,
-//   pennies: number
-// }} = {
