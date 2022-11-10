@@ -1,0 +1,2 @@
+
+"interface Coins {  [coinName: string]: number}  const usd: Coins = {    quarters: 25,    dimes: 10,    nickels: 5,    pennies: 1}  const yen: Coins = {  \u4e94\u767e\u5186\u7389: 500,  \u767e\u5186\u7389: 100,  \u4e94\u5341\u5186\u7389: 50,  \u5341\u5186\u7389: 10,  \u4e94\u5186\u7389: 5,  \u4e00\u5186\u7389: 1}const coins: {[k: string]: Coins} = {usd, yen}export default coins;"

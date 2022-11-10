@@ -37,9 +37,13 @@ if (tender == null) {
 }
 
 // Implement your vending machine here!
-import coins from './currencies.js';
+// import coins from './currencies.js';
+import jsonCoins from './currencies.json'
+const coins = JSON.parse(jsonCoins);
+
 
 const currency = coins[tender]
+console.log(currency);
 if (currency == null) {
   console.log('unknown currency');
   process.exit(4)
