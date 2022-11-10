@@ -58,8 +58,11 @@ if (changeToBeReturned < 0) {
 }
 
 for (let [coin, value] of Object.entries(currency)) {
+  // @ts-ignore
   while (changeToBeReturned >= value) {
+    // @ts-ignore
     changeObject[coin] = Math.floor(changeToBeReturned / value);
+    // @ts-ignore
     changeToBeReturned = changeToBeReturned % value;
   }
 }
