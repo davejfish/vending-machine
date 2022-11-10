@@ -38,12 +38,15 @@ if (tender == null) {
 
 // Implement your vending machine here!
 // import coins from './currencies.js';
-import jsonCoins from './currencies.json'
-const coins = JSON.parse(jsonCoins);
+import jsonCoins from './currencies.json';
 
+type Coin = {[coinName: string]: number}
+type currencies = {[k: string]: Coin}
+
+const coins: currencies = JSON.parse(jsonCoins);
 
 const currency = coins[tender]
-console.log(currency);
+
 if (currency == null) {
   console.log('unknown currency');
   process.exit(4)
@@ -58,11 +61,8 @@ if (changeToBeReturned < 0) {
 }
 
 for (let [coin, value] of Object.entries(currency)) {
-  // @ts-ignore
   while (changeToBeReturned >= value) {
-    // @ts-ignore
     changeObject[coin] = Math.floor(changeToBeReturned / value);
-    // @ts-ignore
     changeToBeReturned = changeToBeReturned % value;
   }
 }
